@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hostel Proximity Checker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Welcome to Sathyabama University</h1>
+    <p>Find out if you're near a university hostel.</p>
+
+    <!-- Hostel selection dropdown -->
+    <label for="hostel">Select Hostel:</label>
+    <select id="hostel">
+      <option value="St_Anthony_Illam_Boys_Hostel">St.Anthony Illam Boys Hostel</option>
+      <option value="MGR_IllamBoys_Hostel">MGR Illam Boys Hostel</option>
+      <option value="Gopalakrishnan_Illam_Boys_Hostel">Gopalakrishnan Illam Boys Hostel</option>
+    </select>
+
+    <!-- Add input fields for latitude and longitude -->
+    <label for="latitude">Enter Latitude:</label>
+    <input type="text" id="latitude" placeholder="Latitude" />
+    <br />
+    <label for="longitude">Enter Longitude:</label>
+    <input type="text" id="longitude" placeholder="Longitude" />
+    <br />
+    <!-- Auto Location button -->
+    <button id="autoLocation">Get My Location</button>
+    <!-- Check Proximity button -->
+    <button id="checkCustomLocation">Check Proximity</button>
+
+    <div id="userLocation"></div>
+    <div id="result"></div>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+  </body>
+</html>

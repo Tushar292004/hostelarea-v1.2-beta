@@ -1,0 +1,20 @@
+{
+    "St_Anthony_Illam_Boys_Hostel": {
+      "lat": 12.870395999094573,
+      "lng": 80.22424001419108,
+      "radius": 45.2,
+      "url": "https://www.sathyabama.ac.in/"
+    },
+    "MGR_IllamBoys_Hostel": {
+      "lat": 12.871296988176596,
+      "lng": 80.21899597808388,
+      "radius": 70,
+      "url": "https://www.sathyabama.ac.in/"
+    },
+    "Gopalakrishnan_Illam_Boys_Hostel": {
+      "lat": 12.872120382563974,
+      "lng": 80.21933513902287,
+      "radius": 50,
+      "url": "https://www.sathyabama.ac.in/"
+    }
+  }

@@ -1,0 +1,212 @@
+:root {
+    --main_color: rgb(178, 37, 37);
+}
+
+/* Reset some default styles */
+body, h1, p {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body background color */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header styles */
+h1 {
+    background-color: var(--main_color);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+p {
+    margin: 1rem 0.2rem;
+}
+
+/* Hostel selection dropdown */
+label {
+    display: block;
+    margin: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 30%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--main_color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0201005e;
+}
+
+/* Result message */
+#result {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Popup class for result message */
+.popup {
+    background-color: var(--main_color);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#hostel{
+    font-size: 1.4rem;
+    padding: 3px;
+}
+
+/* Hide attendance success message initially */
+#attendanceSuccess {
+    display: none;
+}
+
+
+/* Attendance Popup Styles */
+#attendancePopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 999;
+    text-align: center; /* Center text and icon */
+}
+
+/* Close icon styles */
+#closeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #888;
+}
+
+#closeIcon:hover {
+    color: #333;
+}
+
+#attendancePopup h2 {
+    color: var(--main_color);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#attendancePopup p {
+    color: var(--main_color);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#attendancePopup button {
+    background-color: var(--main_color);
+    color:white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#attendancePopup button:hover {
+    background-color: rgba(244, 7, 7, 0.826);
+}
+
+#attendanceSuccess {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#attendanceSuccess p {
+    font-size: 18px;
+}
+
+#attendanceSuccess img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+/* Small screens (mobile devices) */
+@media only screen and (max-width: 600px) {
+    /* Header styles */
+    h1 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    /* Hostel selection dropdown */
+    label {
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+    
+
+
+    input[type="text"] {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 10px 15px;
+        margin: 10px;
+    }
+
+
+    /* Result message */
+    #result {
+        font-size: 1.2rem;
+    }
+    
+    /* Popup class for result message */
+    .popup {
+        padding: 8px;
+    }
+
+    #attendancePopup {
+        padding: 10px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust styles as needed for medium-sized screens */
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+    /* Adjust styles as needed for large screens */
+}
